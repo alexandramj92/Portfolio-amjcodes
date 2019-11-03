@@ -1,0 +1,175 @@
+/* font-family: 'Questrial', sans-serif;
+font-family: 'Rock Salt', cursive;
+font-family: 'Lilita One', cursive;
+font-family: 'Alegreya Sans SC', sans-serif; */
+
+html {
+	scroll-behavior: smooth;
+}
+
+.btn-outline-info:hover {
+    color: black;
+    background-color: white;
+    border-color: white;
+}
+
+/* Background image */
+
+body { 
+    background: url('images/dark-stars.jpg') no-repeat center center fixed; 
+    -webkit-background-size: contain;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+  }
+
+/* Fonts */
+
+h1, p {
+    color: white;
+}
+
+h1{
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+p, a, button {
+    font-family: 'Questrial', sans-serif;
+
+}
+
+
+/* Welcome section */
+
+#welcome-container{
+    height: 100vh;
+}
+
+#welcome-col{
+    background-color: rgba(3, 3, 3, 0.9);
+    padding: 25px;
+    border-radius: 2em;
+}
+
+/*About Me section */
+
+#about-container{
+    height: 100vh;
+}
+
+#about-col{
+    background-color: rgba(3, 3, 3, 0.9);
+    padding: 25px;
+    border-radius: 2em;
+}
+
+#about-img {
+    border-radius: 15em;
+    height: 325px;;
+    width: 325px;
+    border: 2px solid black;
+}
+
+/*Services Section */
+#services-container{
+    height: 100vh;
+}
+
+.card-text{
+    color: white;
+}
+
+.card-title{
+    color: rgb(38, 173, 193);
+}
+
+.card-link{
+    color: rgb(217, 98, 4);
+}
+
+.card{
+    background-color:  rgba(3, 3, 3, 0.9);
+}
+
+/*Portfolio Section */
+#portfolio-container{
+    height: 100vh;
+}
+
+.carousel-item{
+    height: 100%;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(38, 173, 193)' viewBox='0 0 8 8'%3E%3Cpath d='M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E")!important;
+  }
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(38, 173, 193)' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+#port-cont{
+    margin-top: 100px;
+}
+
+/*Navigation Bar */
+
+.navbar{
+    background-color: rgb(217, 98, 4);
+    font-size: 20px;
+}
+
+#contact-btn{
+    font-size: 20px;
+    width: 125px;
+}
+
+.btn-outline-info {
+    color: white;
+    border-color: white;
+    border-radius: 2em;
+}
+
+#logo {
+    height: 80px;
+    width: 80px;
+    margin-top: -10px;
+    margin-bottom: -20px;
+}
+
+a.nav-link.active {
+    background-color:  rgb(217, 98, 4)!important;
+    border-color: rgb(217, 98, 4)!important;
+    color: white!important;
+}
+
+a.nav-link{
+    border-color: rgb(217, 98, 4)!important;
+
+
+}
+
+/* Media Queries */
+
+@media (min-width: 992px){
+    /*Justifies menu items to the right in the nav bar */
+    .navbar-expand-lg .navbar-collapse {
+        justify-content: flex-end!important;
+    }
+}
+
+
+@media (max-width: 768px) { 
+    #about-img{
+        margin-top: 100px;
+        margin-bottom: 15px;
+    }
+
+    #services-container{
+        padding-top: 100px;
+        margin-top: 90px;
+        margin-bottom: 245px;
+    }
+
+}
