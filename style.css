@@ -41,7 +41,6 @@ p, a, button {
     background: linear-gradient(55deg, #b2e3dd 30%, rgba(0,0,0,0) 30%), linear-gradient(-55deg, rgba(0,0,0,0) 30%, #cc6930 30%), url('images/palmtreesone.jpg');
     background-size: cover;
     background-position: 50% -20%;
-    text-align: right;
 
     
 
@@ -365,6 +364,7 @@ a.nav-link.active {
     #cover-title {
         font-size: 30px!important;
         margin-top: 35px!important;
+        color: blue!important;
     }
 
     #cover-p {
@@ -386,8 +386,7 @@ a.nav-link.active {
     }
 
     #contact-btn, a.nav-link {
-        font-size: 15px!important;
-        padding: .5rem 2px!important;
+        font-size: 10px!important;
     }
 
     #contact-btn{
@@ -417,7 +416,7 @@ a.nav-link.active {
 
     #portfolio-container {
         padding-top: 80px;
-        height: 130vh;
+        height: 140vh;
     }
 
     #contact-col {
