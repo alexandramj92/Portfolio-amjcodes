@@ -1,7 +1,6 @@
-/* font-family: 'Questrial', sans-serif;
-font-family: 'Rock Salt', cursive;
-font-family: 'Lilita One', cursive;
-font-family: 'Alegreya Sans SC', sans-serif; */
+/* font-family: 'Shadows Into Light', cursive;
+
+font-family: 'Montserrat', sans-serif;*/
 
 html {
 	scroll-behavior: smooth;
@@ -13,30 +12,20 @@ html {
     border-color: white;
 }
 
-/* Background image */
 
-body { 
-    background: url('images/dark-stars.jpg') no-repeat center center fixed; 
-    -webkit-background-size: contain;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    position: relative;
-  }
+
 
 /* Fonts */
 
-h1, p {
-    color: white;
-}
 
 h1{
-    font-family: 'Alegreya Sans SC', sans-serif;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 50px;
 }
 
 p, a, button {
-    font-family: 'Questrial', sans-serif;
-
+    font-family: 'Montserrat', sans-serif;    
+    font-size: 20px;
 }
 
 
@@ -44,91 +33,274 @@ p, a, button {
 
 #welcome-container{
     height: 100vh;
+
+    /* background: -webkit-linear-gradient(45deg, #f5796d  30%, rgba(0,0,0,0) 30%), -webkit-linear-gradient(-45deg, #f5796d  30%, #5c88c5 30%);
+    background: -o-linear-gradient(45deg, #f5796d  30%, rgba(0,0,0,0) 30%), -o-linear-gradient(-45deg, #f5796d  30%, #5c88c5  30%);
+    background: -moz-linear-gradient(45deg, #f5796d  30%, rgba(0,0,0,0) 30%), -moz-linear-gradient(-45deg, #f5796d  30%, #5c88c5  30%);
+    background: linear-gradient(45deg, #f5796d 30%, rgba(0,0,0,0) 30%), linear-gradient(-45deg, #f5796d 30%, #5c88c5 30%); */
+    background: linear-gradient(55deg, #b2e3dd 30%, rgba(0,0,0,0) 30%), linear-gradient(-55deg, rgba(0,0,0,0) 30%, #cc6930 30%), url('images/palmtreesone.jpg');
+    background-size: cover;
+    background-position: 50% -20%;
+    text-align: right;
+
+    
+
 }
 
 #welcome-col{
-    background-color: rgba(3, 3, 3, 0.9);
     padding: 25px;
-    border-radius: 2em;
+    color: white;
+    margin-top: 4%;
+    text-align: center;
+
+}
+
+#cover-title {
+    font-size: 80px!important;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    -webkit-animation-name: coverTitle; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: coverTitle;
+    animation-duration: 2s;
+}
+
+
+/* cover title animation */
+@keyframes coverTitle {
+    0%   {top:-200px}
+    100% {top:0px}
+  }
+
+#cover-p {
+    font-size: 25px!important;
+    color: black;
+    font-weight: bold;
+    margin-top: 10px;
+   
+}
+
+
+#gs-but{
+    font-size: 25px;
+    font-weight: bold;
+    background-color: transparent;
+    border-radius: 1.5em;
+    border: 2px solid black;
+}
+
+#gs-but:hover{
+    background-color: white;
+}
+
+
+#gs-but:active {
+    background-color: #b2e3dd;
+
+}
+
+
+#cover-image{
+    margin-top: 40px;
+}
+
+
+
+/* Bounce image */
+
+
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-30px);
+		-ms-transform:     translateY(-30px);
+		transform:         translateY(-30px)
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+	}
+}
+
+#cover-image {  
+  /* position: absolute;
+  top: 50%;
+  left: 50%; */
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  line-height: 180px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+#cover-image:hover {
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
 }
 
 /*About Me section */
 
 #about-container{
-    height: 100vh;
+    height: 100vh; 
+    padding: 50px;
+    background-color: #cc6930;
+    background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
+
 }
 
 #about-col{
-    background-color: rgba(3, 3, 3, 0.9);
-    padding: 25px;
-    border-radius: 2em;
+    padding-top: 5%;
+    margin: auto;
+    
 }
 
 #about-img {
     border-radius: 15em;
-    height: 325px;;
-    width: 325px;
-    border: 2px solid black;
+    height: 300px;;
+    width: 300px;
+    float: right;
+    margin: 5px 5px 5px 10px;
 }
 
-/*Services Section */
-#services-container{
-    height: 100vh;
+#about-sec{
+    background-color: #b2e3dd;
+    padding: 30px;   
+    text-align: justify; 
+    border-radius: 1.5em;
+    color: black;
+    width: 750px;
 }
 
-.card-text{
-    color: white;
-}
-
-.card-title{
-    color: rgb(38, 173, 193);
-}
-
-.card-link{
-    color: rgb(217, 98, 4);
-}
-
-.card{
-    background-color:  rgba(3, 3, 3, 0.9);
-}
 
 /*Portfolio Section */
 #portfolio-container{
     height: 100vh;
+    padding-top: 10%;
+    background-color: #cc6930;
+    background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
+
 }
 
-.carousel-item{
-    height: 100%;
+.card {
+    border-radius: 1.5em;
+    -webkit-box-shadow: 3px 3px 5px 6px rgb(43, 46, 68);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    3px 3px 5px 6px rgb(43, 46, 68);  /* Firefox 3.5 - 3.6 */
+    box-shadow:         3px 3px 5px 6px rgb(43, 46, 68);
+    margin: 20px;
 }
 
-.carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(38, 173, 193)' viewBox='0 0 8 8'%3E%3Cpath d='M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E")!important;
-  }
-
-.carousel-control-next-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(38, 173, 193)' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+.card-img-top {
+    border-radius: 1.5em 1.5em 0 0;
+    height: 150px!important;
 }
 
-#port-cont{
-    margin-top: 100px;
+a.btn {
+    background-color: #cc6930;
+    color: white;
+}
+
+
+/*Contact */
+
+#contact-cont{
+    height: 100vh; 
+    padding: 50px;
+    background-color: #cc6930;
+    background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
+}
+
+#contact-col {
+    padding-top: 5%;
+    padding-right: 20%;
+    padding-left: 20%;
+}
+
+#cont-btn{
+    background-color:#b2e3dd ;
+    color: black;
+    border: 2px solid black;
+    border-radius: 1.5em;
+    width: 150px;
+    font-size: 20px;
+}
+
+#cont-btn:hover {
+    width: 155px;
+    font-size: 23px;
+}
+
+#cont-btn:active{
+    background-color: white;
+}
+
+
+
+/*Footer */
+footer {
+    background: white;
+    height:50px;
+    text-align: right!important;
+}
+
+#footer-div {
+    margin-right: 20px;
 }
 
 /*Navigation Bar */
 
 .navbar{
-    background-color: rgb(217, 98, 4);
-    font-size: 20px;
+     
+    background-color: white;
+
 }
 
 #contact-btn{
-    font-size: 20px;
-    width: 125px;
+    width: 150px;
+    color: black;
+    font-size: 30px;
+    font-family: 'Shadows Into Light', cursive;
+    background-color: transparent;
+    border-radius: 1.5em;
+    border: 2px solid black;
+}
+#contact-btn:hover{
+    background-color: #cc6930;
+}
+
+
+#contact-btn:active {
+    background-color: #b2e3dd;
+
 }
 
 .btn-outline-info {
-    color: white;
-    border-color: white;
+    color: black;
+    border-color: black;
     border-radius: 2em;
+     
+}
+
+
+
+.btn-outline-info:hover{
+    background-color: #b2e3dd;
+    color: white;
 }
 
 #logo {
@@ -138,38 +310,99 @@ p, a, button {
     margin-bottom: -20px;
 }
 
-a.nav-link.active {
-    background-color:  rgb(217, 98, 4)!important;
-    border-color: rgb(217, 98, 4)!important;
-    color: white!important;
-}
+
 
 a.nav-link{
-    border-color: rgb(217, 98, 4)!important;
-
+    color: black;
+    font-size: 30px;
+    font-family: 'Shadows Into Light', cursive;
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 3px 3px;
+    text-decoration: none;
 
 }
+
+a.nav-link:hover {
+    color: #cc6930;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23cc6930' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: 0 100%;
+    background-size: auto 6px;
+    background-repeat: repeat-x;
+    text-decoration: none;
+}
+
+
 
 /* Media Queries */
 
-@media (min-width: 992px){
-    /*Justifies menu items to the right in the nav bar */
-    .navbar-expand-lg .navbar-collapse {
-        justify-content: flex-end!important;
+
+/* 1290 */
+
+/* // Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+/* @media (min-width: 576px) {  } */
+
+/* // Medium devices (tablets, 768px and up) */
+/* @media (min-width: 768px) { } */
+
+/* // Large devices (desktops, 992px and up) */
+/* @media (max-width: 992px) { 
+   
+} */
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) { 
+   
+
+    #cover-title {
+        font-size: 50px!important;
+        margin-top: 35px!important;
     }
-}
 
+    #cover-p {
+        font-size: 20px!important;
+    }
 
-@media (max-width: 768px) { 
+    #cover-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .navbar {
+        font-size: 15px!important;
+    }
+
+    #contact-btn, a.nav-link {
+        font-size: 25px!important;
+    }
+
+    h1{
+        font-size: 35px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
     #about-img{
-        margin-top: 100px;
-        margin-bottom: 15px;
+        width: 200px;
+        height: 200px;
     }
 
-    #services-container{
-        padding-top: 100px;
-        margin-top: 90px;
-        margin-bottom: 245px;
+    #about-container{
+        height: 130vh;
+    }
+
+    #about-sec {
+        width: 100%;
+    }
+
+    #portfolio-container {
+        padding-top: 80px;
+        height: 140vh;
     }
 
 }
