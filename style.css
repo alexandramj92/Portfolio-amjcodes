@@ -50,7 +50,7 @@ p, a, button {
 #welcome-col{
     padding: 25px;
     color: white;
-    margin-top: 4%;
+    margin-top: 8%;
     text-align: center;
 
 }
@@ -338,6 +338,10 @@ a.nav-link:hover {
     background-size: auto 6px;
     background-repeat: repeat-x;
     text-decoration: none;
+}
+
+a.nav-link.active {
+    color: #cc6930;
 }
 
 
