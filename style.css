@@ -364,44 +364,46 @@ a.nav-link.active {
 
 @media screen and (min-width:1px) and (max-width:599px){
     #cover-title {
-        font-size: 5px!important;
+        font-size: 30px!important;
         margin-top: 35px!important;
     }
 
     #cover-p {
-        font-size: 20px!important;
+        font-size: 15px!important;
     }
 
     #cover-image {
-        width: 180px;
-        height: 180px;
+        width: 130px;
+        height: 130px;
     }
 
-    
+    #gs-but{
+        font-size: 14px;
+    }
 
     #contact-btn, a.nav-link {
-        font-size: 22px!important;
+        font-size: 18px!important;
     }
 
     #contact-btn{
-        width: 120px;
+        width: 100px;
     }
 
     h1{
-        font-size: 35px;
+        font-size: 30px;
     }
 
     p{
-        font-size: 16px;
+        font-size: 12px;
     }
 
     #about-img{
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
     }
 
     #about-container{
-        height: 130vh;
+        height: 100vh;
     }
 
     #about-sec {
@@ -410,7 +412,7 @@ a.nav-link.active {
 
     #portfolio-container {
         padding-top: 80px;
-        height: 140vh;
+        height: 130vh;
     }
 
     #contact-col {
