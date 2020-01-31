@@ -362,10 +362,62 @@ a.nav-link.active {
 
 /* // Small devices (landscape phones, 576px and up) */
 
-@media screen and (min-width:0px) and (max-width:700px){
+@media screen and (min-width:1px) and (max-width:599px){
     #cover-title {
         font-size: 5px!important;
+        margin-top: 35px!important;
     }
+
+    #cover-p {
+        font-size: 20px!important;
+    }
+
+    #cover-image {
+        width: 180px;
+        height: 180px;
+    }
+
+    
+
+    #contact-btn, a.nav-link {
+        font-size: 22px!important;
+    }
+
+    #contact-btn{
+        width: 120px;
+    }
+
+    h1{
+        font-size: 35px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    #about-img{
+        width: 200px;
+        height: 200px;
+    }
+
+    #about-container{
+        height: 130vh;
+    }
+
+    #about-sec {
+        width: 100%;
+    }
+
+    #portfolio-container {
+        padding-top: 80px;
+        height: 140vh;
+    }
+
+    #contact-col {
+        margin-top: 50px;
+    }
+
+
   }
 
 /* // Medium devices (tablets, 768px and up) */
@@ -377,7 +429,7 @@ a.nav-link.active {
 } */
 
 /* // Extra large devices (large desktops, 1200px and up) */
-@media (max-width: 1200px) { 
+@media screen and (min-width:600px) and (max-width: 1200px) { 
    
 
     #cover-title {
