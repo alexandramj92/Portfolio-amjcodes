@@ -361,8 +361,71 @@ a.nav-link.active {
 // No media query since this is the default in Bootstrap */
 
 /* // Small devices (landscape phones, 576px and up) */
+@media screen and (min-width:0px) and (max-width:299px) {
+    #cover-title {
+        font-size: 30px!important;
+        margin-top: 35px!important;
+    }
 
-@media screen and (min-width:1px) and (max-width:599px){
+    #cover-p {
+        font-size: 15px!important;
+    }
+
+    #logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    #cover-image {
+        width: 130px;
+        height: 130px;
+    }
+
+    #gs-but{
+        font-size: 14px;
+    }
+
+    #contact-btn, a.nav-link {
+        font-size: 15px!important;
+    }
+
+    #contact-btn{
+        width: 80px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+    #about-img{
+        width: 150px;
+        height: 150px;
+    }
+
+    #about-container{
+        height: 100vh;
+    }
+
+    #about-sec {
+        width: 100%;
+    }
+
+    #portfolio-container {
+        padding-top: 80px;
+        height: 130vh;
+    }
+
+    #contact-col {
+        margin-top: 50px;
+    }
+
+}
+
+@media screen and (min-width:300px) and (max-width:599px){
     #cover-title {
         font-size: 30px!important;
         margin-top: 35px!important;
