@@ -387,6 +387,7 @@ a.nav-link.active {
 
     #contact-btn, a.nav-link {
         font-size: 15px!important;
+        padding: .5rem 2px!important;
     }
 
     #contact-btn{
