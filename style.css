@@ -20,12 +20,12 @@ html {
 
 h1{
     font-family: 'Shadows Into Light', cursive;
-    font-size: 45px;
+    font-size: 40px;
 }
 
 p, a, button {
     font-family: 'Montserrat', sans-serif;    
-    font-size: 20px;
+    font-size: 18px;
 }
 
 
@@ -133,8 +133,8 @@ p, a, button {
   /* position: absolute;
   top: 50%;
   left: 50%; */
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
   border-radius: 50%;
   line-height: 180px;
   text-align: center;
@@ -208,6 +208,12 @@ p, a, button {
 .card-img-top {
     border-radius: 1.5em 1.5em 0 0;
     height: 150px!important;
+}
+
+.card-title {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 a.btn {
@@ -355,7 +361,12 @@ a.nav-link.active {
 // No media query since this is the default in Bootstrap */
 
 /* // Small devices (landscape phones, 576px and up) */
-/* @media (min-width: 576px) {  } */
+
+ @media only screen and (max-width: 600px) {
+    #cover-title {
+        font-size: 5px!important;
+    }
+  }
 
 /* // Medium devices (tablets, 768px and up) */
 /* @media (min-width: 768px) { } */
@@ -379,16 +390,18 @@ a.nav-link.active {
     }
 
     #cover-image {
-        width: 200px;
-        height: 200px;
+        width: 180px;
+        height: 180px;
     }
 
-    .navbar {
-        font-size: 15px!important;
-    }
+    
 
     #contact-btn, a.nav-link {
-        font-size: 25px!important;
+        font-size: 22px!important;
+    }
+
+    #contact-btn{
+        width: 120px;
     }
 
     h1{
@@ -396,7 +409,7 @@ a.nav-link.active {
     }
 
     p{
-        font-size: 20px;
+        font-size: 16px;
     }
 
     #about-img{
