@@ -390,7 +390,7 @@ a.nav-link.active {
     }
 
     a.nav-link {
-        margin-right: -30px;
+        margin-left: -29px;
     }
 
     #contact-btn{
@@ -420,7 +420,7 @@ a.nav-link.active {
 
     #portfolio-container {
         padding-top: 80px;
-        height: 140vh;
+        height: 150vh;
     }
 
     #contact-col {
@@ -458,7 +458,7 @@ a.nav-link.active {
     }
 
     a.nav-link {
-        margin-right: -30px;
+        margin-left: -28px;
     }
 
     #contact-btn{
@@ -488,7 +488,7 @@ a.nav-link.active {
 
     #portfolio-container {
         padding-top: 80px;
-        height: 130vh;
+        height: 140vh;
     }
 
     #contact-col {
