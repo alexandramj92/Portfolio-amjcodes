@@ -246,8 +246,7 @@ a.btn {
 }
 
 #cont-btn:hover {
-    width: 155px;
-    font-size: 23px;
+    background-color: white;
 }
 
 #cont-btn:active{
