@@ -157,7 +157,7 @@ p, a, button {
 
 #about-container{
     height: 100vh; 
-    padding: 50px;
+    padding: 30px;
     background-color: #b2e3dd;
     background-image: url("https://www.transparenttextures.com/patterns/fresh-snow.png");
 
@@ -411,7 +411,7 @@ a.nav-link.active {
     }
 
     #about-container{
-        height: 110vh;
+        height: 115vh;
     }
 
     #about-sec {
@@ -479,7 +479,7 @@ a.nav-link.active {
     }
 
     #about-container{
-        height: 100vh;
+        height: 115vh;
     }
 
     #about-sec {
@@ -548,7 +548,7 @@ a.nav-link.active {
     }
 
     #about-container{
-        height: 130vh;
+        height: 100vh;
     }
 
     #about-sec {
