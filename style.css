@@ -389,6 +389,10 @@ a.nav-link.active {
         font-size: 10px!important;
     }
 
+    a.nav-link {
+        margin-right: -30px;
+    }
+
     #contact-btn{
         width: 80px;
     }
