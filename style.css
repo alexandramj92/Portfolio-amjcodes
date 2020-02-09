@@ -19,9 +19,14 @@ h1{
     font-size: 40px;
 }
 
-p, a, button {
+a, button {
     font-family: 'Montserrat', sans-serif;    
     font-size: 18px;
+}
+
+p, li {
+    font-family: 'Montserrat', sans-serif;    
+    font-size: 14px;
 }
 
 
@@ -37,6 +42,7 @@ p, a, button {
     background: linear-gradient(55deg, #b2e3dd 30%, rgba(0,0,0,0) 30%), linear-gradient(-55deg, rgba(0,0,0,0) 30%, #cc6930 30%), url('images/palmtreesone.jpg');
     background-size: cover;
     background-position: 50% -20%;
+    border-bottom: 5px solid black;
 
     
 
@@ -150,47 +156,83 @@ p, a, button {
   -moz-animation-name: bounce;
 }
 
+
+
+
 /*About Me section */
 
 #about-container{
-    height: 100vh; 
-    padding: 30px;
-    background-color: #b2e3dd;
-    background-image: url("https://www.transparenttextures.com/patterns/fresh-snow.png");
+    height: 100vh, auto; 
+    padding: 0px!important;
+    margin: 0px!important;
+    background-color: #cc6930;
 
+
+  
 }
 
 #about-col{
     padding-top: 5%;
     margin: auto;
+    background-color: #b2e3dd;
+    border-bottom-right-radius: 90%;
+    height: fit-content!important;
+    
     
 }
 
+#map-icon{
+    margin-right: 10px;
+}
+
 #about-img {
-    border-radius: 15em;
-    height: 300px;;
-    width: 300px;
-    float: right;
-    margin: 5px 5px 5px 10px;
+    height: 250px;;
+    margin: 20px 5px 20px 5px;
+    border: 2px solid black;
 }
 
 #about-sec{
-    background-color: #cc6930;
     padding: 30px;   
     text-align: justify; 
     border-radius: 1.5em;
     color: black;
-    width: 750px;
+    width: 500px;
+    height: fit-content;
+    margin: 15px;
+}
+
+.title-underline {
+    border-bottom: 2px solid black;
+}
+
+ul {
+list-style-type: none;
+columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+#img-div {
+    padding: 30px;
 }
 
 
 /*Portfolio Section */
 #portfolio-container{
     height: 100vh;
-    padding-top: 10%;
-    background-color: #b2e3dd;
-    background-image: url("https://www.transparenttextures.com/patterns/fresh-snow.png");
+    padding: 0px!important;
+    margin: 0px!important;
+    background-color: #cc6930;
 
+}
+
+#port-col {
+    border-top-left-radius: 90%;
+    background-color: #b2e3dd;
+    height: 100%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin-bottom: -15%;
 }
 
 .card {
@@ -199,6 +241,7 @@ p, a, button {
     -moz-box-shadow:    3px 3px 5px 6px rgb(43, 46, 68);  /* Firefox 3.5 - 3.6 */
     box-shadow:         3px 3px 5px 6px rgb(43, 46, 68);
     margin: 20px;
+    height: 350px;
 }
 
 .card-img-top {
@@ -224,7 +267,6 @@ a.btn {
     height: 100vh; 
     padding: 50px;
     background-color: #b2e3dd;
-    background-image: url("https://www.transparenttextures.com/patterns/fresh-snow.png");
 }
 
 #contact-col {
@@ -351,80 +393,15 @@ a.nav-link.active {
 
 /* Media Queries */
 
-@media screen and (min-width:0px) and (max-width:299px) {
-    #cover-title {
-        font-size: 30px!important;
-        margin-top: 35px!important;
-        color: blue!important;
-    }
 
-    #cover-p {
-        font-size: 15px!important;
-    }
 
-    #logo {
-        width: 30px;
-        height: 30px;
-    }
-
-    #cover-image {
-        width: 130px;
-        height: 130px;
-    }
-
-    #gs-but{
-        font-size: 14px;
-    }
-
-    #contact-btn, a.nav-link {
-        font-size: 10px!important;
-    }
-
-    a.nav-link {
-        margin-left: -29px;
-    }
-
-    #contact-btn{
-        width: 80px;
-    }
-
-    h1{
-        font-size: 30px;
-    }
-
-    p{
-        font-size: 12px;
-    }
-
-    #about-img{
-        width: 150px;
-        height: 150px;
-    }
-
-    #about-container{
-        height: 115vh;
-    }
-
-    #about-sec {
-        width: 100%;
-    }
-
-    #portfolio-container {
-        padding-top: 80px;
-        height: 150vh;
-    }
-
-    #contact-col {
-        margin-top: 50px;
-    }
-
-}
-
-@media screen and (min-width:300px) and (max-width:599px){
+@media screen and (min-width:0px) and (max-width:1200px){
     #cover-title {
         font-size: 30px!important;
         margin-top: 35px!important;
     }
+
+    
 
     #cover-p {
         font-size: 15px!important;
@@ -460,26 +437,20 @@ a.nav-link.active {
         font-size: 30px;
     }
 
-    p{
-        font-size: 12px;
+   
+    #about-col {
+        justify-content: left!important;
     }
-
-    #about-img{
-        width: 150px;
-        height: 150px;
-    }
+    
 
     #about-container{
-        height: 115vh;
+        height: auto!important;
     }
 
-    #about-sec {
-        width: 100%;
-    }
-
+   
     #portfolio-container {
-        padding-top: 80px;
-        height: 145vh;
+        height: auto!important;
+        padding-bottom: 100px!important;
     }
 
     #contact-col {
@@ -489,70 +460,6 @@ a.nav-link.active {
 
   }
 
-/* // Medium devices (tablets, 768px and up) */
-/* @media (min-width: 768px) { } */
 
-/* // Large devices (desktops, 992px and up) */
-/* @media (max-width: 992px) { 
-   
-} */
 
-/* // Extra large devices (large desktops, 1200px and up) */
-@media screen and (min-width:600px) and (max-width: 1200px) { 
-   
 
-    #cover-title {
-        font-size: 50px!important;
-        margin-top: 35px!important;
-    }
-
-    #cover-p {
-        font-size: 20px!important;
-    }
-
-    #cover-image {
-        width: 180px;
-        height: 180px;
-    }
-
-    
-
-    #contact-btn, a.nav-link {
-        font-size: 22px!important;
-    }
-
-    #contact-btn{
-        width: 120px;
-    }
-
-    h1{
-        font-size: 35px;
-    }
-
-    p{
-        font-size: 16px;
-    }
-
-    #about-img{
-        width: 200px;
-        height: 200px;
-    }
-
-    #about-container{
-        height: 100vh;
-    }
-
-    #about-sec {
-        width: 100%;
-    }
-
-    #portfolio-container {
-        padding-top: 80px;
-        height: 140vh;
-    }
-
-    #contact-col {
-        margin-top: 50px;
-    }
-
-}
