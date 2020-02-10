@@ -181,12 +181,32 @@ p, li {
     
 }
 
-#map-icon{
+#map-icon, #work-icon{
     margin-right: 10px;
 }
 
+#work-icon {
+    text-decoration: none;
+    color: black;
+}
+
+#work-icon:hover{
+    color: #cc6930;
+}
+
+#port-ref {
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif;    
+    font-size: 14px;
+}
+
+#port-ref:hover {
+    color: #cc6930;
+}
+
 #about-img {
-    height: 250px;;
+    height: 250px;
     margin: 20px 5px 20px 5px;
     border: 2px solid black;
 }
@@ -395,7 +415,8 @@ a.nav-link.active {
 
 @media screen and (min-width:0px) and (max-width:500px){
     #about-img {
-        width: 90%;
+        width: 200px;
+        height: auto;
     }
 }
 
