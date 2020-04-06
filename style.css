@@ -26,7 +26,7 @@ a, button {
 
 p, li {
     font-family: 'Montserrat', sans-serif;    
-    font-size: 14px;
+    font-size: 12px;
 }
 
 
@@ -280,6 +280,10 @@ a.btn {
     color: white;
 }
 
+#zoe-image {
+    width: 150px;
+    margin: auto;
+}
 
 /*Contact */
 
